@@ -1,58 +1,71 @@
-# 📦 Dashboard Inteligente de Otimização de Estoque
+# 🚀 Sistema Inteligente de Gestão de Estoque
 
-Projeto completo de Engenharia de Produção + Data Analytics com foco em eficiência logística e tomada de decisão baseada em dados.
+Dashboard interativo desenvolvido para identificar desperdícios financeiros, otimizar níveis de estoque e apoiar decisões logísticas com base em dados.
 
-## 🚀 Objetivo
-Analisar e otimizar o estoque de uma operação, identificando:
+---
 
-- Excesso de estoque (capital parado)
-- Risco de ruptura
-- Eficiência operacional
-- Oportunidades de redução de custo
+## 📸 Visão do Sistema
+
+![Dashboard](dashboard.png)
+
+---
+
+## 💰 Resultados Obtidos
+
+- +R$ 1.6 milhão identificados em excesso de estoque (capital parado)  
+- ~R$ 10 mil em risco de ruptura  
+- +R$ 1.2 milhão em estoque saudável  
+
+---
+
+## 💡 Problema
+
+Empresas frequentemente enfrentam:
+
+- Capital parado em estoque  
+- Falta de visibilidade operacional  
+- Decisões baseadas em intuição  
+
+---
+
+## 🎯 Solução
+
+Este projeto implementa um sistema capaz de:
+
+- Identificar excesso de estoque  
+- Detectar risco de ruptura  
+- Prever consumo futuro (Machine Learning)  
+- Gerar insights automáticos  
+
+---
+
+## 🔥 Diferenciais do Projeto
+
+- Integração de Engenharia de Produção + Data Analytics  
+- Sistema de alerta automático de ruptura  
+- Previsão de demanda com Machine Learning  
+- Visualização interativa para tomada de decisão  
 
 ---
 
 ## 📊 Funcionalidades
 
-- KPIs estratégicos (Valor Total, Excesso, Ruptura)
-- Classificação automática de estoque:
-  - Ruptura
-  - Saudável
-  - Excesso
-- Dashboard interativo com filtros
-- Visualização de produtos críticos
-- Alertas automáticos de ruptura
-- Previsão de consumo com Machine Learning
-- Insights automáticos para tomada de decisão
+- KPIs estratégicos (Valor Total, Excesso, Ruptura)  
+- Filtros dinâmicos por categoria  
+- Ranking de produtos críticos  
+- Dashboard interativo  
+- Insights automáticos  
 
 ---
 
-## 🧠 Técnicas Aplicadas
+## 🧠 Tecnologias
 
-- Estoque de Segurança
-- Cobertura de Estoque
-- Análise de Dados Logísticos
-- Machine Learning (Regressão Linear)
-
----
-
-## 🛠️ Tecnologias
-
-- Python
-- Pandas
-- NumPy
-- Streamlit
-- Matplotlib
-- Scikit-learn
-
----
-
-## 📈 Resultados Obtidos
-
-- Identificação de capital parado em estoque
-- Redução de desperdícios operacionais
-- Melhor visibilidade sobre riscos logísticos
-- Apoio à tomada de decisão estratégica
+- Python  
+- Pandas  
+- NumPy  
+- Streamlit  
+- Matplotlib  
+- Scikit-learn  
 
 ---
 

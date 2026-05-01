@@ -1,0 +1,63 @@
+# 📦 Dashboard Inteligente de Otimização de Estoque
+
+Projeto completo de Engenharia de Produção + Data Analytics com foco em eficiência logística e tomada de decisão baseada em dados.
+
+## 🚀 Objetivo
+Analisar e otimizar o estoque de uma operação, identificando:
+
+- Excesso de estoque (capital parado)
+- Risco de ruptura
+- Eficiência operacional
+- Oportunidades de redução de custo
+
+---
+
+## 📊 Funcionalidades
+
+- KPIs estratégicos (Valor Total, Excesso, Ruptura)
+- Classificação automática de estoque:
+  - Ruptura
+  - Saudável
+  - Excesso
+- Dashboard interativo com filtros
+- Visualização de produtos críticos
+- Alertas automáticos de ruptura
+- Previsão de consumo com Machine Learning
+- Insights automáticos para tomada de decisão
+
+---
+
+## 🧠 Técnicas Aplicadas
+
+- Estoque de Segurança
+- Cobertura de Estoque
+- Análise de Dados Logísticos
+- Machine Learning (Regressão Linear)
+
+---
+
+## 🛠️ Tecnologias
+
+- Python
+- Pandas
+- NumPy
+- Streamlit
+- Matplotlib
+- Scikit-learn
+
+---
+
+## 📈 Resultados Obtidos
+
+- Identificação de capital parado em estoque
+- Redução de desperdícios operacionais
+- Melhor visibilidade sobre riscos logísticos
+- Apoio à tomada de decisão estratégica
+
+---
+
+## ▶️ Como Executar
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py

@@ -1,6 +1,10 @@
-# 🚀 Sistema Inteligente de Gestão de Estoque
+# 📦 Dashboard de Gestão de Estoque
 
-Dashboard interativo desenvolvido para identificar desperdícios financeiros, otimizar níveis de estoque e apoiar decisões logísticas com base em dados.
+Dashboard interativo em Python e Streamlit que classifica produtos em **Excesso**, **Saudável** ou **Ruptura**, mostra quanto capital está parado e destaca os produtos críticos para apoiar decisões de PCP e logística.
+
+> ⚠️ **Projeto demonstrativo.** Os dados são **simulados** (50 produtos gerados com `numpy`, semente fixa). Os valores abaixo vêm desse cenário de teste e não representam uma empresa real.
+
+🔗 **Demo online:** https://dashboard-estoque-dyhlx2qqctp4ccw4gevgh2.streamlit.app
 
 ---
 
@@ -10,11 +14,14 @@ Dashboard interativo desenvolvido para identificar desperdícios financeiros, ot
 
 ---
 
-## 💰 Resultados Obtidos
+## 📊 Resultados do cenário simulado
 
-- +R$ 1.6 milhão identificados em excesso de estoque (capital parado)  
-- ~R$ 10 mil em risco de ruptura  
-- +R$ 1.2 milhão em estoque saudável  
+| Status | Produtos | Valor em estoque |
+|---|---|---|
+| Excesso | 19 | ~R$ 1,60 milhão |
+| Saudável | 29 | ~R$ 1,24 milhão |
+| Ruptura | 2 | ~R$ 10 mil |
+| **Total** | 50 | ~R$ 2,85 milhões |
 
 ---
 
@@ -22,55 +29,48 @@ Dashboard interativo desenvolvido para identificar desperdícios financeiros, ot
 
 Empresas frequentemente enfrentam:
 
-- Capital parado em estoque  
-- Falta de visibilidade operacional  
-- Decisões baseadas em intuição  
+- Capital parado em estoque
+- Falta de visibilidade operacional
+- Decisões baseadas em intuição
 
 ---
 
-## 🎯 Solução
+## 🎯 O que o projeto faz
 
-Este projeto implementa um sistema capaz de:
-
-- Identificar excesso de estoque  
-- Detectar risco de ruptura  
-- Prever consumo futuro (Machine Learning)  
-- Gerar insights automáticos  
-
----
-
-## 🔥 Diferenciais do Projeto
-
-- Integração de Engenharia de Produção + Data Analytics  
-- Sistema de alerta automático de ruptura  
-- Previsão de demanda com Machine Learning  
-- Visualização interativa para tomada de decisão  
-
----
-
-## 📊 Funcionalidades
-
-- KPIs estratégicos (Valor Total, Excesso, Ruptura)  
-- Filtros dinâmicos por categoria  
-- Ranking de produtos críticos  
-- Dashboard interativo  
-- Insights automáticos  
+- Calcula a **cobertura em dias** de cada produto
+- Calcula o **estoque de segurança** (consumo médio × lead time)
+- Classifica cada produto por regra:
+  - **Ruptura:** estoque atual < estoque de segurança
+  - **Excesso:** cobertura > 120 dias
+  - **Saudável:** nos demais casos
+- Exibe KPIs (valor total, excesso e ruptura), filtro por categoria, Top 10 produtos por valor em estoque e alertas de ruptura
+- Gera um insight automático a partir de uma regra simples (excesso vs. ruptura)
+- Inclui uma estimativa de consumo com regressão linear (**demonstrativo**, ver limitações)
 
 ---
 
 ## 🧠 Tecnologias
 
-- Python  
-- Pandas  
-- NumPy  
-- Streamlit  
-- Matplotlib  
-- Scikit-learn  
+- Python
+- Pandas
+- NumPy
+- Streamlit
+- Matplotlib
+- Scikit-learn
 
 ---
 
-## ▶️ Como Executar
+## ⚠️ Limitações e próximos passos
+
+- Os dados são simulados; o próximo passo é rodar com dados reais (por exemplo, exportados de um ERP).
+- A regressão linear usa apenas o lead time como variável e serve como demonstração. Para uma **previsão de demanda de verdade** é preciso uma série histórica de consumo (por exemplo, médias móveis, suavização exponencial ou Prophet).
+- O estoque de segurança usa uma regra simples; pode evoluir para incluir variabilidade da demanda e nível de serviço.
+
+---
+
+## ▶️ Como executar
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+``
